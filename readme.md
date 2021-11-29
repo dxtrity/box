@@ -8,7 +8,7 @@
 The ``pack`` command:
 
 ```console
-box > pack <file>
+user: $ box pack <file>
 ```
 
 This command allows the user to turn the file inputted into a ``.box`` file.</br>This makes the files transferable across the **Box Network**.
@@ -17,7 +17,7 @@ This command allows the user to turn the file inputted into a ``.box`` file.</br
 The ``unpack`` command:
 
 ```console
-box > unpack <file>
+user: $ box unpack <file>
 ```
 
 This command allows the user to turn the file inputted from a ``.box`` file into it's original file.</br>
@@ -26,7 +26,7 @@ This command allows the user to turn the file inputted from a ``.box`` file into
 The ``ship`` command:
 
 ```console
-box > ship <file> <target>
+user: $ box ship <file> <target>
 ```
 
 This command allows the user to **ship** their file to a specified target location.
@@ -35,7 +35,7 @@ This command allows the user to **ship** their file to a specified target locati
 The ``install`` command:
 
 ```console
-box > install <package>
+user: $ box install <package>
 ```
 
 This command allows the user to install a package.
