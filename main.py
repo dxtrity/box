@@ -1,11 +1,12 @@
-import bpm
+import pack
+import unpack
 
 def main():
     cmd = input("box > ")
     if cmd == "pack":
-        bpm.pack("test.txt")
+        pack.pack("test.txt")
     elif cmd == "unpack":
-        bpm.unpack("test.txt.box")
+        unpack.unpack("test.txt.box")
 
 
 
