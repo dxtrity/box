@@ -1,0 +1,9 @@
+# Ignore any compiled python
+__pycache__/
+
+# Ignore tests
+test/
+
+# Ignore any text and box files
+*.txt
+*.box
