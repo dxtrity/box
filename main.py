@@ -11,7 +11,7 @@ def main():
         print("All set and all ready to go!")
         print("")
         main()
-    elif op == "query":
+    elif cmd == "query":
         query.this(f"{op}")
         print("")
         main()
