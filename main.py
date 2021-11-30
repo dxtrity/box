@@ -8,7 +8,7 @@ def main():
     if cmd == "pack":
         print("Finishing your package up...")
         pack.this(f"{op}")
-        print("All set and all ready to go!")
+        print(f"Created box file for {op}!")
         print("")
         main()
     elif cmd == "query":
