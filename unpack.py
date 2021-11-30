@@ -1,7 +1,7 @@
 import os
 import shutil
 
-def unpack(a):
+def this(a):
     with open(a, "r") as f:
         filename = os.path.basename(f.name).split(".")
 

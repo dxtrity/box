@@ -4,9 +4,9 @@ import unpack
 def main():
     cmd = input("box > ")
     if cmd == "pack":
-        pack.pack("test.txt")
+        pack.this("test.txt")
     elif cmd == "unpack":
-        unpack.unpack("test.txt.box")
+        unpack.this("test.txt.box")
 
 
 

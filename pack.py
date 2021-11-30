@@ -1,23 +1,34 @@
 import os
-import shutil
 
-def get_data(a):
-    with open(a,"r") as r:
-        content = r.read()
-        return content
+def just_the_file(file):
+        with open(file, "r") as f:
+            filename = str(os.path.basename(f.name))
+            return filename
 
-def pack(a):
-    content = get_data(a)
+def get_filetype(file):
+    with open(file, "r") as f:
+        filename = os.path.basename(f.name).split(".")
+        filetype = str(filename[1])
+        return filetype
 
-    with open(a, "w") as f:
-
+def get_dirname(file):
+    with open(file, "r") as f:
         filename = os.path.basename(f.name).split(".")
         dirname = str(filename[0])
-        filetype = str(filename[1])
-        
-        packed_file = str(f"{dirname}.box")
-        
-        f.write(f"$.{filetype}")
-        f.write(f"${content}")
+        return dirname
 
-        shutil.copy(a,packed_file)
+file = just_the_file("test.txt")
+filename = get_dirname("test.txt")
+filetype = get_filetype("test.txt")
+
+def make_box_file():
+    global filename
+    global filetype
+
+    with open(f"{filename}.box", "w") as f:
+        f.write(f"box$")
+        f.write(f"{filename}$")
+        f.write(f".{filetype}")
+
+def this(file):
+    make_box_file()
