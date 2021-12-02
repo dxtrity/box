@@ -11,16 +11,7 @@ The ``pack`` command:
 user: $ box pack <file>
 ```
 
-This command allows the user to turn the file inputted into a ``.box`` file.</br>This makes the files transferable across the **Box Network**.
-
-### Box unpack command
-The ``unpack`` command:
-
-```console
-user: $ box unpack <file>
-```
-
-This command allows the user to turn the file inputted from a ``.box`` file into it's original file.</br>
+This command allows the user to generate a box file for the project which is the primary way of controlling box packages.
 
 ### Box ship command
 The ``ship`` command:
