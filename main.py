@@ -26,18 +26,23 @@ def main():
         install.this("Dev Defined Argument")
         print("")
         main()
-    elif cmd == "help" and op == "":
-        helpful.help_cmd()
     elif cmd == "help" and op == "pack":
+        helpful.help_pack()
+        main()
+    elif cmd == "help" and op == "me":
         helpful.help_cmd()
+        main()
     elif cmd == "help" and op == "ship":
-        helpful.help_cmd()
+        helpful.help_ship()
+        main()
     elif cmd == "help" and op == "install":
-        helpful.help_cmd()
+        helpful.help_install()
+        main()
     elif cmd == "help" and op == "query":
-        helpful.help_cmd()
+        helpful.help_query()
+        main()
     else:
-        print("That is now a valid command. Run 'box help' for help.")
+        print("That is now a valid command. Run 'box help me' for help.")
         main()
 
 # Main
