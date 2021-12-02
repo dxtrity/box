@@ -1,5 +1,7 @@
 import pack
 import query
+import ship
+import install
 
 def main():
     _cmd = input("box > ").split()
@@ -15,6 +17,18 @@ def main():
         query.this(f"{op}")
         print("")
         main()
+    elif cmd == "ship":
+        ship.this("Dev Defined Argument","Dev Defined Argument")
+        print("")
+        main()
+    elif cmd == "install":
+        install.this("Dev Defined Argument")
+        print("")
+        main()
+    else:
+        print("That is now a valid command. Run 'box help' for help.")
+        main()
+
 
 
 
