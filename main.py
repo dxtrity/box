@@ -2,7 +2,7 @@ import pack
 import query
 import ship
 import install
-import file
+import helpful
 
 def main():
     _cmd = input("box > ").split()
@@ -26,8 +26,16 @@ def main():
         install.this("Dev Defined Argument")
         print("")
         main()
-    elif cmd == "help":
-        file.help_cmd()
+    elif cmd == "help" and op == "":
+        helpful.help_cmd()
+    elif cmd == "help" and op == "pack":
+        helpful.help_cmd()
+    elif cmd == "help" and op == "ship":
+        helpful.help_cmd()
+    elif cmd == "help" and op == "install":
+        helpful.help_cmd()
+    elif cmd == "help" and op == "query":
+        helpful.help_cmd()
     else:
         print("That is now a valid command. Run 'box help' for help.")
         main()
