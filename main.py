@@ -32,9 +32,6 @@ def main():
         print("That is now a valid command. Run 'box help' for help.")
         main()
 
-
-
-
-# Main Loop
+# Main
 if __name__ == "__main__":
     main()
